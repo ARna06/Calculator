@@ -1,0 +1,83 @@
+@font-face {
+    font-family: customFont;
+    src: url(Technology-BoldItalic.ttf);
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.794);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'customFont';
+}
+
+.container{
+    background-color: beige;
+    font-size: 50pt;
+    flex-direction: column;
+    display: flex;
+    height: 650px;
+    width: 475px;
+    padding: 20px;
+    border: 6pt solid black;
+    border-radius: 20pt;
+    gap: 10px;
+}
+.button-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.operationZone{
+    background-color: rgba(0, 0, 0, 0.922);
+    color: rgb(146, 142, 142);
+    border: 1pt solid black;
+    border-radius: 20pt;
+    text-align: right;
+    padding: 20pt;
+    flex-grow: 1;
+}
+
+.clear, .sign, .percent, .division,
+.seven,.eight, .nine, .multiplication, 
+.four, .five, .six, .minus,
+.one, .two, .three, .plus, 
+.zero, .decimal, .equals {
+    width: 111.805px;
+    height: 91.281px;
+    padding: 0;
+    margin: 0;
+    border: 5pt solid gray;
+    border-radius: 20pt;
+    font-family: 'customFont';
+    font-size: 36pt;
+}
+
+.zero {
+    flex-grow: 2;
+}
+
+.clear, .sign, .percent, .decimal{
+    background-color: coral;
+}
+
+.plus, .division, .multiplication, .minus, .equals{
+    background-color: blueviolet;
+}
+
+.one, .two, .three, .four, .five,
+.six, .seven, .eight, .nine, .zero {
+    background-color: greenyellow;
+}
